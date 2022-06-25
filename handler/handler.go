@@ -3,12 +3,12 @@ package handler
 // handler must define in advance
 
 const (
-	RpcStuctName = "RpcStruct"
+	RpcServiceName = "RpcService"
 )
 
-type RpcStruct struct{}
+type RpcService struct{}
 
-func (s *RpcStruct) Show(req string, res *string) (err error) {
-	*res = "rpc : " + req
+func (s *RpcService) Show(req string, res *string) (err error) {
+	*res = "i am service. your parameter is : " + req
 	return nil
 }
